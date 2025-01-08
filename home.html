@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Font Example</title>
+    <link rel="stylesheet" href="styles.css">
+<    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        body {
+        background-image: url('assets/tomandjerrybackground.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    }
+    /* END OF THEIR CODE */
+
+    header {
+        background-color: #4E532A; /*RECTANGLE FOR HEADER*/
+        padding: 20px;
+        border-radius: 8px;
+        width: auto;
+        max-width: 800px;
+        margin: 20px auto; /* CENTER THE HEADER */
+        color: white;
+        display: flex;
+        justify-content: space-between; /* ALIGNS TITLE AND NAV */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header a.nav_link {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    header a.nav_link h1 {
+        display: inline; /* KEEPS h1 IN SAME MARGIN */
+        margin: 0;
+        color: #7B2D2D; /*INSIDE HEADER BOX*/
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* SPACE BETWEEN NAV LINKS */
+    }
+    nav a.nav-link {
+        color: white; 
+        text-decoration: none; 
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+        display: block;
+    }
+    nav a.nav-link:hover {
+        color: #d9eaff; 
+    }
+
+    .cardboard {
+        background-color: rgba(0, 0, 0, 0.7); 
+        padding: 20px;
+        border-radius: 8px;
+        width: auto;
+        max-width: 800px;
+        margin: 20px auto; /* CENTER CARDBOARD */
+        text-align: center;
+    }
+    .rectangle {
+        width: 100vw; 
+        height: 80vh; 
+        background-color: rgb(101, 2, 2); 
+        position: relative;
+        margin-top: 0.5in;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        overflow: hidden; 
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .gallery {
+        display: flex;
+        overflow: hidden;
+        gap: 10px;
+        width: 100%; 
+        height: 100%; 
+    }
+
+    .gallery img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 8px;
+    }
+    .thumbnails {
+        display: flex;
+        justify-content: center; /* HORIZONTAL THUMBNAILS */
+        gap: 10px;
+    }
+
+    .thumbnails img {
+        width: 100px;
+        height: auto;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 8px;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        min-width: 160px;
+        z-index: 1;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .dropdown-content li a {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .dropdown-content li a:hover {
+        color: black;
+    }
+
+    .squaresContainer {
+        display: flex;
+        justify-content: space-between; 
+        margin: 20px auto; 
+        width: 90%; 
+    }
+
+    .squareBox {
+        flex: 1; 
+        margin: 0 10px; 
+        height: 350px; 
+        border-radius: 8px; 
+        overflow: hidden;
+    }
+
+
+    .squareBox img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        display: block;
+    }
+    
+    .uniqueContainer {
+        display: flex;
+        justify-content: space-between; 
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .uniqueSquare {
+        width: 400px;
+        height: 265px;
+        background-color: #d9eaff;
+        border: 2px solid #94722e; 
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
+    }
+
+    .uniqueRectangle {
+        width: 50vw; 
+        height: 33vh;
+        background-color: #d9eaff;
+        border: 2px solid #94722e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    } 
+
+    .uniqueSquare img,
+    .uniqueRectangle img {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+    h2 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    /*MENU */
+    .fourBoxContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px auto;
+        max-width: 200vw; 
+        height: 50vh;
+        gap: 10px;
+    }           
+
+    .fourBoxContainer 
+    .box {
+        flex: 1; 
+        max-width: 200vw;
+        height: 50vh;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .fourBoxContainer .box img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover;
+        display: block;
+    }
+
+
+    .box {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+</head>
+<body>
+<!--NAV-->
+<header>
+    <a class="nav_link" href="#"><h1>Clocked By Jerry!</h1></a>
+    <nav>
+        <ul class="nav-menu">
+            <li><a class="nav-link" href="home.html">HOME</a></li>
+            <li><a class="nav-link" href="about.html">ABOUT OUR CHEFS</a></li>
+            <li><a class="nav-link" href="contact.html">CONTACT US</a></li>
+            <li><a class="nav-link" href="specials.html">SPECIALS</a></li>
+            <li class="dropdown">
+                <a class="nav-link" href="#">POPULAR</a>
+                <ul class="dropdown-content">
+                    <li><a href="assets/">Rengdang</a></li>
+                    <li><a href="assets/">Mi Goreng</a></li>
+                </ul>     
+            </li>
+            <li class="dropdown">
+                <a class="nav-link" href="#">SERVICES</a>
+                <ul class="dropdown-content">
+                    <li><a href="service1.html">Catering</a></li>
+                    <li><a href="service2.html">Personal Chefs</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header> 
