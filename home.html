@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Font Example</title>
+    <title>CLocked By Jerry!</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-    
-    html, body {
+    html, body {  /*BACKGROUND IMG */
         margin: 0;
         padding: 0;
         height: 100%;
@@ -20,15 +19,13 @@
         background-repeat: no-repeat;
     }
 
-
     header {
-        background-color: #4A6274; /* BOX */
-        padding: 20px;
+        background-color: #4A6274; /* BOX COLOR*/
+        padding: 40px;
         border-radius: 8px;
         width: auto;
         max-width: 800px;
-        margin: 20px 0 20px auto; /* Push to the right by using auto margin */
-        color: white;
+        margin: 20px 0 20px auto; /* RIGHT OF MARGIN */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,10 +34,10 @@
     }
 
     .logo {
-        height: 80px;  /* Adjust size */
-        width: auto;
+        height: 170px; 
+        width: 170px;
         position: absolute;
-        top: 10px;
+        top: 40px;
         left: 10px;
     }
 
@@ -51,12 +48,12 @@
         font-weight: bold;
     }
     header a.nav_link h1 {
-        display: inline; /* Keeps h1 in same margin */
+        display: inline; /* H1 IN SAME MARGIN */
         margin: 0;
         color: #7B2D2D; /* CLOCKED BY JERRY */
-        font-family: 'SuperToonsItalic'; /* Apply custom font with fallback */
-        font-style: italic; /* Ensure it's italic */
-    }
+        font-family: 'SuperToonsItalic'; /* CUSTOM FONT */
+        font-style: italic; 
+    }  /* Fixed missing closing bracket */
 
     nav ul {
         list-style-type: none;
@@ -88,16 +85,20 @@
         list-style-type: none;
     }
 
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
     .dropdown-content li a {
         padding: 10px 20px;
         display: block;
+        color: white;
     }
 
     .dropdown-content li a:hover {
         color: black;
     }
-          
-</style>
+    </style>
 </head>
 <body>
 <!--NAV-->
@@ -112,19 +113,20 @@
             <li class="dropdown">
                 <a class="nav-link" href="#">POPULAR</a>
                 <ul class="dropdown-content">
-                    <li><a href="assets/">Rengdang</a></li>
-                    <li><a href="assets/">Mi Goreng</a></li>
+                    <li><a class="nav-link" href="assets/">Rengdang</a></li>
+                    <li><a class="nav-link" href="assets/">Mi Goreng</a></li>
                 </ul>     
             </li>
             <li class="dropdown">
                 <a class="nav-link" href="#">SERVICES</a>
                 <ul class="dropdown-content">
-                    <li><a href="service1.html">Catering</a></li>
-                    <li><a href="service2.html">Personal Chefs</a></li>
+                    <li><a class="nav-link" href="service1.html">Catering</a></li>
+                    <li><a class="nav-link" href="service2.html">Personal Chefs</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
-
 </header> 
-    <img class="logo" src="assets/logo1.png" alt="Logo">
+    <img class="logo" src="assets/logo3.png" alt="Logo">
+</body>
+</html>
