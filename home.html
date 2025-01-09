@@ -32,6 +32,17 @@
         flex-wrap: wrap;
         position: relative;
     }
+    header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Fills the width of the header */
+        height: 12px; /* Thickness of the bar */
+        background-color: #2C3E50; /* Bar color */
+        border-bottom-left-radius: 8px; /* Matches the border radius of the header */
+        border-bottom-right-radius: 8px; /* Matches the border radius of the header */
+    }
 
     .logo {
         height: 170px; 
@@ -64,7 +75,7 @@
         gap: 10px; /* SPACE BETWEEN NAV LINKS */
     }
     nav a.nav-link {
-        color: white; 
+        color: #3B3A36; 
         text-decoration: none; 
         font-size: 18px;
         font-weight: bold;
@@ -78,7 +89,8 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: #A3B9A0;
+        border-radius: 8px;
         min-width: 160px;
         z-index: 1;
         padding: 0;
@@ -92,7 +104,7 @@
     .dropdown-content li a {
         padding: 10px 20px;
         display: block;
-        color: white;
+        color: #4E532A;
     }
 
     .dropdown-content li a:hover {
@@ -107,8 +119,7 @@
     <nav>
         <ul class="nav-menu">
             <li><a class="nav-link" href="home.html">HOME</a></li>
-            <li><a class="nav-link" href="about.html">ABOUT OUR CHEFS</a></li>
-            <li><a class="nav-link" href="contact.html">CONTACT US</a></li>
+            <li><a class="nav-link" href="clocks.html">SHOP YOUR CLOCK</a></li>
             <li><a class="nav-link" href="specials.html">SPECIALS</a></li>
             <li class="dropdown">
                 <a class="nav-link" href="#">POPULAR</a>
@@ -120,8 +131,8 @@
             <li class="dropdown">
                 <a class="nav-link" href="#">SERVICES</a>
                 <ul class="dropdown-content">
-                    <li><a class="nav-link" href="service1.html">Catering</a></li>
-                    <li><a class="nav-link" href="service2.html">Personal Chefs</a></li>
+                    <li><a class="nav-link" href="repairs.html">REPAIRS</a></li>
+                    <li><a class="nav-link" href="contact.html">CONTACT US</a></li>
                 </ul>
             </li>
         </ul>
