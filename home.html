@@ -49,8 +49,18 @@
         width: 170px;
         position: absolute;
         top: 40px;
-        left: 10px;
+        left: 40px;
     }
+
+    .redsquare {
+        position: absolute; /*SCROLLS */
+        left: 5px; 
+        top: 45%; 
+        width: 90px; 
+        height: 110px; 
+        background-color: #7B2D2D; 
+    }
+
 
     header a.nav_link {
         text-decoration: none;
@@ -74,7 +84,7 @@
         flex-wrap: wrap;
         gap: 10px; /* SPACE BETWEEN NAV LINKS */
     }
-    nav a.nav-link {
+    nav a.navlink {
         color: #3B3A36; 
         text-decoration: none; 
         font-size: 18px;
@@ -82,7 +92,7 @@
         margin-left: 10px;
         display: block;
     }
-    nav a.nav-link:hover {
+    nav a.navlink:hover {
         color: #d9eaff; 
     }
 
@@ -118,26 +128,28 @@
     <a class="nav_link" href="#"><h1>Clocked By Jerry!</h1></a>
     <nav>
         <ul class="nav-menu">
-            <li><a class="nav-link" href="home.html">HOME</a></li>
-            <li><a class="nav-link" href="clocks.html">SHOP YOUR CLOCK</a></li>
-            <li><a class="nav-link" href="specials.html">SPECIALS</a></li>
+            <li><a class="navlink" href="home.html">HOME</a></li>
+            <li><a class="navlink" href="clocks.html">SHOP YOUR CLOCK</a></li>
+            <li><a class="navlink" href="specials.html">SPECIALS</a></li>
             <li class="dropdown">
-                <a class="nav-link" href="#">POPULAR</a>
+                <a class="navlink" href="#">POPULAR</a>
                 <ul class="dropdown-content">
-                    <li><a class="nav-link" href="assets/">Rengdang</a></li>
-                    <li><a class="nav-link" href="assets/">Mi Goreng</a></li>
+                    <li><a class="navlink" href="assets/">Rengdang</a></li>
+                    <li><a class="navlink" href="assets/">Mi Goreng</a></li>
                 </ul>     
             </li>
             <li class="dropdown">
-                <a class="nav-link" href="#">SERVICES</a>
+                <a class="navlink" href="#">SERVICES</a>
                 <ul class="dropdown-content">
-                    <li><a class="nav-link" href="repairs.html">REPAIRS</a></li>
-                    <li><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                    <li><a class="navlink" href="repairs.html">REPAIRS</a></li>
+                    <li><a class="navlink" href="contact.html">CONTACT US</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header> 
     <img class="logo" src="assets/logo3.png" alt="Logo">
+
+    <a class="redsquare"> </a>
 </body>
 </html>
